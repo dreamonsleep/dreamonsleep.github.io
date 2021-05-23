@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="css/sidenav.css"> -->
+  <link rel="stylesheet" href="css/leaderboard.css">
+
+  <script defer src="js/leaderboard.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+</head>
+
+<body>
+    <!--Side Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("sidenav.html");
+      });
+    </script>
+
+    <!--leaderboard-->
+    <h1>Leaderboard</h1> 
+
+    <div class="wrapper">
+      <div class="lboard_section">
+        <div class="lboard_tabs">
+          <div class="tabs">
+              <ul>
+                <li data-li="today">Today</li>
+                <li class="active" data-li="month">Month</li>
+              </ul>
+          </div>
+        </div>
+      
+      <div class="lboard_wrap">
+        <div class="lboard_item today" style="display: none;">
+          <div class="lboard_mem">
+            <div class="img">
+              <img src="duggy.png" alt="picture of Duggy">
+            </div>
+            <div class="name_bar">
+                  <p><span>1.</span> Dug</p>
+                  <div class="bar_wrap">
+                    <div class="inner_bar" style="width:95%"></div>
+                  </div>
+            </div>
+            <div class="sleeptime">
+                9 h 35 m
+            </div>
+          </div>
+          <div class="lboard_mem">
+            <div class="img">
+              <img src="carl.png" alt="picture of Carl">
+            </div>
+            <div class="name_bar">
+                  <p><span>2.</span> Carl</p>
+                  <div class="bar_wrap">
+                    <div class="inner_bar" style="width:80%"></div>
+                  </div>
+            </div>
+            <div class="sleeptime">
+                  8 h 35 m
+            </div>
+          </div>  
+          <div class="lboard_mem">
+              <div class="img">
+                <img src="russell.png" alt="picture of Russell">
+              </div>
+              <div class="name_bar">
+                <p><span>3.</span> Russell</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width:60%"></div>
+                </div>
+              </div>
+              <div class="sleeptime">
+                    6 h 22 m
+              </div>  
+          </div>
+        </div>
+        <div class="lboard_item month" style="display:block;">
+          <div class="lboard_mem">
+            <div class="img">
+              <img src="carl.png" alt="picture of Carl">
+            </div>
+            <div class="name_bar">
+                  <p><span>1.</span> Carl</p>
+                  <div class="bar_wrap">
+                    <div class="inner_bar" style="width:90%"></div>
+                  </div>
+            </div>
+            <div class="sleeptime">
+                  9 h 15 m
+            </div>
+          </div> 
+          <div class="lboard_mem">
+            <div class="img">
+              <img src="duggy.png" alt="picture of Duggy">
+            </div>
+            <div class="name_bar">
+                  <p><span>2.</span> Dug</p>
+                  <div class="bar_wrap">
+                    <div class="inner_bar" style="width:79%"></div>
+                  </div>
+            </div>
+            <div class="sleeptime">
+                8 h 35 m
+            </div>
+          </div> 
+          <div class="lboard_mem">
+              <div class="img">
+                <img src="russell.png" alt="picture of Russell">
+              </div>
+              <div class="name_bar">
+                <p><span>3.</span> Russell</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width:50%"></div>
+                </div>
+              </div>
+              <div class="sleeptime">
+                    7 h 12 m
+              </div>  
+          </div>
+        </div>
+
+<script src="leaderboard.js"></script>
+</body>
+

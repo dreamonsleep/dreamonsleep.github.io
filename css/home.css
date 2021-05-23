@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+    font-family:'Varela Round', sans-serif;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family:'Varela Round', sans-serif;
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+    background-image: url(../stars.jpg);
+    background-size: cover;
+    background-color: #05031f;
+  }
+
+  h1{
+    color: rgb(255, 247, 175);
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  iframe {
+    padding-top: 10px;
+  }

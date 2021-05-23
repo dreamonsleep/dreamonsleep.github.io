@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/friends.css">
+  <link rel="stylesheet" href="css/sidenav.css">
+
+  <script defer src="js/friends.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+
+</head>
+
+<body>
+    <!--Side Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("sidenav.html");
+      });
+    </script>
+    
+    <h1>Friends</h1>
+
+    <!-- Friend Profile Pics -->
+    <div class="wrapper">
+        <div class="edna">
+            <img src="edna.png" height="100" width="100" alt="picture of Edna">
+            <p id="info"> 
+                <b>Edna</b> 
+                <br> 
+                <span>10 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+        <div class="jackjack">
+            <img src="jackjack.png" height="100" width="100" alt="picture of jackjack"> 
+            <p id="info">
+                <b>JackJack</b>
+                <br>
+                <span>8 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+        <div class="boo">
+            <img src="boo.png" height="100" width="100" alt="picture of jackjack"> 
+            <p id="info">
+                <b>Boo</b>
+                <br>
+                <span>2 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+        <div class="slug">
+            <img src="slug.png" height="100" width="100" alt="picture of jackjack"> 
+            <p id="info">
+                <b>Heimlich</b>
+                <br>
+                <span>17 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+        <div class="charles">
+            <img src="charles.png" height="100" width="100" alt="picture of jackjack"> 
+            <p id="info">
+                <b>Charles</b>
+                <br>
+                <span>4 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+        <div class="mike">
+            <img src="mike.png" height="100" width="100" alt="picture of jackjack"> 
+            <p id="info">
+                <b>Mike</b>
+                <br>
+                <span>11 mutual friends</span>
+            </p>
+            <div id="button-block">
+                <div id="add">+ Add Friend</div>
+            </div>
+        </div>
+    </div>
+</body>
+

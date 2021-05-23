@@ -1,0 +1,39 @@
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/sidenav.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+<!-- Load Font Awesome icon library -->
+<script src="https://kit.fontawesome.com/dee5dcbd9c.js" crossorigin="anonymous"></script>
+<!-- Side navigation -->
+<body>  
+    <div class="sidebar">
+        <!-- <div class="sidebar_inner"> -->
+            <!-- <div class="profile-info">
+                <div class="profile-img">
+                    <img src="duggy.jpg" alt="profile_pic">
+                </div>
+                <div class="profile-data">
+                    <div class="name">Duggy</div>
+                    <div class="btn">Progress bar placeholder</div> <!--edit this for progress bar
+                </div>
+            </div> -->
+            <ul class="sidebar_menu">
+                <li><a class="active" href="home.html"><i class="fas fa-home"></i><span class="title">Home</span></a></li>
+                <li><a href="sleep.html"><i class="fas fa-bed"></i><span class="title">Sleep</span></a></li>
+                <li><a href="leaderboard.html"><i class="fas fa-medal"></i><span class="title">Leaderboard</span></a></li>
+                <li><a href="calendar.html"><i class="fas fa-calendar-alt"></i><span class="title">Calendar</span></a></li>
+                <li><a href="friends.html"><i class="fas fa-users"></i><span class="title">Friends</span></a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i><span class="title">Settings</span></a></li>
+            </ul>
+        </div>
+        </div>  
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let sidebar = document.querySelector('.sidebar');
+            let toggle = document.querySelector('.toggle');
+            sidebar.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+   </script>
+</body>

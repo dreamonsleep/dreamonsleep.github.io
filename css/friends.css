@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+    font-family:'Varela Round', sans-serif;
+  }
+  
+  body {
+    display: grid;
+    height: 100%;
+    /* margin: 0px 0px 0px 0px; */
+    font-family:'Varela Round', sans-serif;
+    justify-items: center;
+    /* align-items: center; */
+    background-image: url(../stars.jpg);
+    background-size: cover;
+    background-color: #05031f;
+  }
+
+  h1{
+    color: rgb(255, 247, 175);
+    padding-top: 20px;
+  }
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 70%;
+    height:80%;
+    margin: 50px 30px 0px 140px;
+    background: #f94f63a6;
+    border-radius: 5px;
+    padding: 25px 25px 75px 25px;
+    /* position: relative; */
+  }
+
+div{
+    padding-bottom: 25px;
+}
+
+  
+p{
+    font-family:sans-serif;
+    margin: 0 0 0 10px;
+    line-height:30px;
+}
+
+/* #fb-top{
+    background-color:#efefef;
+    height:30px;
+    width:500px;
+    border-radius:5px 5px 0 0;
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    border:1px solid gray;
+} */
+  
+img{
+    position: relative;
+    float: left;
+}
+  
+/* #info{
+    /* position:absolute; */
+    /* left:120px;
+    top:75px; */
+
+  
+#info {
+    position: relative;
+    color:rgb(252, 229, 125);
+    line-height:25px;
+    font-size:18px;
+    float: left;
+    padding: 25px 0;
+}
+  
+#info span{
+    color:white;
+    font-size:14px;
+}
+  
+#button-block{
+    position: relative;
+    float: left;
+    padding: 25px 20px;
+}
+  
+#button-block div{
+    display:inline-block;
+}
+  
+#add {
+    background-color:rgb(252, 229, 125);
+    color: black;
+    padding:7px;
+    border-radius:2px;
+    margin-right:10px;
+    font-family:sans-serif;
+}
+  
+  
+  #button-block div:hover{
+    opacity:.8;
+    cursor:pointer;
+  }
+  
+
+

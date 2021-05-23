@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sleep.css">
+  <link rel="stylesheet" href="css/sidenav.css">
+
+  <script defer src="js/sleep.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+
+  <!--Ensure FULL jQuery library is included in HTML to use-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+  </script>
+
+  <!--Save Web Form Data to Google Sheets-->
+  <script>
+    function SubForm(){ 
+      $.ajax({
+        url:'https://api.apispreadsheets.com/data/12646/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function(){
+          alert("Data Submitted")
+        },
+        error: function(){
+          alert("Error with Submission")
+        },
+      
+      });
+
+    }
+  </script>
+</head>
+
+<body>
+    <!--Side Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("sidenav.html");
+      });
+    </script>
+    <h1> Sleep Log </h1>
+    <main id="main-holder">
+    <!-- Clock Form: Sleep Date-->
+        <form id="myForm" action=""> <!--add GOOGLE API-->
+            <label for="sleepdate">Date:</label>
+            <input type="date" id="sleepdate" name="sleepdate">
+        
+    <!-- Clock Form: Start Sleep Time-->     
+            <label for="starttime">Sleep Start Time:</label>
+            <input type="time" id="starttime" name="starttime">
+
+    <!-- Clock Form: End Sleep Time--> 
+            <label for="endtime">Sleep End Time:</label>
+            <input type="time" id="endtime" name="endtime">
+        </form>
+      
+      <button onclick="SubForm()">Submit</button>
+    </main>
+
+</body>

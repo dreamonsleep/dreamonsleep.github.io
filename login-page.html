@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login-page.css">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <script defer src="js/login-page.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+</head>
+
+<body>
+ <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+
+<!--Login form-->
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"> <!-- will show dots instead of actual password-->
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/sidenav.css">
+
+  <script defer src="js/home.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+</head>
+
+<body>
+    <!--Side Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("sidenav.html");
+      });
+    </script>
+
+    <h1> Sleep Statistics </h1>
+    <!--Duration of Sleep -->
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOQYtAV5C94FIscf2JqYem5mNKa38mM724UErbjeWXxsey4O2YrFEkJMy_2gi09hJYto-ROfXp6WjO/pubchart?oid=2035120604&amp;format=interactive">
+    </iframe>
+    <br>
+    <!--Sleep Start Time-->
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOQYtAV5C94FIscf2JqYem5mNKa38mM724UErbjeWXxsey4O2YrFEkJMy_2gi09hJYto-ROfXp6WjO/pubchart?oid=694961619&amp;format=interactive">
+    </iframe>
+    <br>
+    <!--Sleep End Time-->
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOQYtAV5C94FIscf2JqYem5mNKa38mM724UErbjeWXxsey4O2YrFEkJMy_2gi09hJYto-ROfXp6WjO/pubchart?oid=40359256&amp;format=interactive">
+    </iframe>
+    <br>
+</body>

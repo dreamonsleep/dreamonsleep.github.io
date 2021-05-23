@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+    font-family:'Varela Round', sans-serif;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family:'Varela Round', sans-serif;
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+    background-image: url(../stars.jpg);
+    background-size: cover;
+    background-color: #05031f;
+  }
+
+h1{
+    color: rgb(255, 247, 175);
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#main-holder {
+    width: 40%;
+    height: 90%;
+    display: grid;
+    justify-items: center; /*arranges the text inside */
+    text-align: center;
+    background-color: #15123fa4;
+    border-radius: 24px;
+    margin-top: 0px;
+    padding-top: 0px;
+    /* box-shadow: 0px 0px 5px 2px; */
+}
+
+label {
+    display: block;
+    color: rgb(255, 247, 175); 
+}
+
+input,
+label {
+    margin: .4rem 0;
+    font-size: 20px;
+}
+
+button{ 
+    background-color:rgb(255, 247, 175);
+    width: 70px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 5px; 
+    font-size: 15px;
+} 
+
+button:hover{
+    background-color:rgb(175, 180, 255)
+}
+
+button:active {
+    background-color: rgb(175, 180, 255);
+    transform: translateY(3px);
+}
+
+form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+

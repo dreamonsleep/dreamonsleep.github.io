@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- Favicon **** will need to do this to every head of the page -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <script defer src="js/about.js"></script> <!-- Javascript only executed after HTMl fully loaded-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- JQUERY-->
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+  
+
+  <!--end of Navigation bar-->
+
+  <main id="main-holder">
+    <div class="the-story">
+        <h1>The Story</h1>
+        <p>A myriad of scientific studies have demonstrated the importance of sleep in improving mental health,
+            strengthening memory and healthy brain function, preventing weight gain, and more, 
+            but <span class="yellowbold">why do 84 million adults (35% of the population) 
+            still report getting less than 7 hours of sleep each day?</span></p>
+        <p>Especially in college, the stigma of sleep along with the institutional factors of
+          alternating class schedules, 7 AM assignment deadlines, and required digital screen
+          use, can make sleep deprivation almost inevitable.</p>
+        <p>This is why I created <span class="yellowbold">DreamOn</span>: a mobile sleep leaderboard 
+          that gamifies sleep and lets you track daily performance so you can see how the power 
+          of sleep personally affects you.</p>
+        <p class="closing">Sleep is not for the weak; sleep is for everyone.<br>
+          I hope DreamOn can help you get the Z's you need.</p>
+        <p style="text-align:right"><span class="signature">Catherine Chen</span></p>
+    </div>
+  </main>
+</body>
