@@ -16,7 +16,7 @@ loginButton.addEventListener("click", (e) => { // function e gets executed after
 
     if (username === "catherine" && password === "sleep") { // will need to setup user and passwords in api//
         alert("You have successfully logged in."); 
-        location.reload();
+        window.location.replace('home.html');
     } else {
         loginErrorMsg.style.opacity = 1; // make error message visible //
     }
